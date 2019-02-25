@@ -44,13 +44,15 @@ function rootReducer(state = initialState, action) {
 
     case RELOAD: {
       return {
-        allBlocks: blocks(state.allBlocks),
+        ...state,
+        allBlocks: blocks(allBlocks),
+        isWin: false,
       };
     }
 
     case EAZY_WIN: {
       return {
-        ...allBlocks,
+        ...state,
         isWin: "true",
       }
     }

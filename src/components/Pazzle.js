@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import "./styles.css";
 import bgPositions from "./bgPosition";
 import { move, reload, eazyWin } from "../store/actions";
-import { GameField, ImageBlock } from "./styledDivs";
+import { GameField, ImageBlock } from "./styles";
 
 function Pazzle(props) {
   const { myBlocks, move, isWin, reload, eazyWin } = props;
